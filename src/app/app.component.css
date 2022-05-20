@@ -4,7 +4,7 @@
   margin-right: auto;
   width: 30%;
   height: auto;
-  border: 1rem solid rgb(236, 236, 236);
+  border: 2rem solid rgb(236, 236, 236);
 }
 
 .mini-padding{
@@ -22,4 +22,15 @@
 
 .margin-top{
   margin-top: 2rem;
+}
+
+.center {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-text{
+  margin-top: 3rem;
 }
