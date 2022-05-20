@@ -19,11 +19,17 @@ export class MaravillasComponent implements OnInit {
   ngOnInit() {
     this.maravillasService.getMaravillas().subscribe(maravillas => {
       this.maravillas = maravillas;
+      this.ordenar();
     });
   }
 
   clickMaravilla(maravilla:Maravilla){
     this.maravillaSeleccionada = maravilla;
+  }
+
+  ordenar()
+  {
+    this.maravillas?.sort((a,b) => a.country.localeCompare(b.country));
   }
 
 }
