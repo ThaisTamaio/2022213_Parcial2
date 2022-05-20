@@ -1,0 +1,16 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let maravilla of maravillas" class="light-gray-bg">
+      <th scope="row">{{maravilla.id}}</th>
+      <td><span (click)="clickMaravilla(maravilla)" class="blue-font clickable">{{maravilla.name}}</span></td>
+      <td>{{maravilla.country}}</td>
+    </tr>
+  </tbody>
+</table>

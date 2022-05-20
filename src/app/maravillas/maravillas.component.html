@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-listar-maravillas [maravillas]="maravillas" (clickMaravillas)="clickMaravilla($event)"></app-listar-maravillas>
+    </div>
+
+    <div class="col margin-detalle">
+      <app-detalle-maravillas [maravilla]="maravillaSeleccionada" *ngIf="maravillaSeleccionada">></app-detalle-maravillas>
+    </div>
+  </div>
+
+</div>
