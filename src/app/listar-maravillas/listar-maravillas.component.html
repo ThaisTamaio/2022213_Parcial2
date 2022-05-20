@@ -7,9 +7,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let maravilla of maravillas;let indexOfelement=index;" class="light-gray-bg">
+    <tr *ngFor="let maravilla of maravillas;let indexOfelement=index;"  (click)="clickMaravilla(maravilla)" class="light-gray-bg clickable">
       <th scope="row">{{indexOfelement+1}}</th>
-      <td><span (click)="clickMaravilla(maravilla)" class="blue-font clickable">{{maravilla.name}}</span></td>
+      <td>{{maravilla.name}}</td>
       <td>{{maravilla.country}}</td>
     </tr>
   </tbody>
